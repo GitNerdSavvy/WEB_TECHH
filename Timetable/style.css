@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+th {
+  color: rgb(0, 0, 0);
+}
+
+
+.OS {
+  background-color: yellow;
+}
+.DBMS {
+  background-color: rgb(167, 167, 245);
+}
+.DSA {
+  background-color: rgb(236, 210, 93);
+}
+.DSALAB {
+  background-color: rgb(227, 212, 146);
+}
+.apti,
+.ECA,
+.tech,
+.sports,
+.verbal {
+  background-color: rgb(194, 249, 194);
+}
+.OOPS {
+  background-color: rgb(208, 208, 227);
+}
+.OOPSLAB {
+  background-color: rgb(170, 201, 231);
+}
+.WT {
+  background-color: rgb(247, 200, 200);
+}
+.slow {
+  color: red;
+}
+.lunch {
+  background-color: antiquewhite;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  white-space: pre-line;
+}
