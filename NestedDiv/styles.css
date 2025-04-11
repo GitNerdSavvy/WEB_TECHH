@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+   text-transform: uppercase;
+}
+
+.outer{
+    width: 100px;
+    border: 25px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{
+    width: 50px;
+    border: 10px solid black;
+}
