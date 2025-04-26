@@ -23,7 +23,10 @@ td {
 th {
   color: rgb(0, 0, 0);
 }
-
+hr{
+  
+  color: rgb(233, 226, 226);
+}
 
 .OS {
   background-color: yellow;

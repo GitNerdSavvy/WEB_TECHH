@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjeev Yadav | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(145deg, #1f1f1f, #0a0a0a);
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0ff;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0ff;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    section {
+      margin: 60px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #0ff;
+      padding-left: 15px;
+    }
+
+    .animated-btn {
+      padding: 10px 20px;
+      background: transparent;
+      color: #0ff;
+      border: 2px solid #0ff;
+      font-size: 1rem;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s;
+      overflow: hidden;
+    }
+
+    .animated-btn::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      top: 0;
+      left: 0;
+      background: #0ff;
+      z-index: -1;
+      transition: height 0.3s ease;
+    }
+
+    .animated-btn:hover::before {
+      height: 100%;
+    }
+
+    .animated-btn:hover {
+      color: #000;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    @keyframes rotate3D {
+      0% { transform: rotateY(0deg) rotateX(0deg); }
+      100% { transform: rotateY(360deg) rotateX(360deg); }
+    }
+
+    .intro-3d {
+      text-align: center;
+      transform-style: preserve-3d;
+      animation: rotate3D 20s infinite linear;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-image.jpg" alt="Sanjeev Yadav" />
+    <h1>Sanjeev Yadav</h1>
+    <p>Full Stack Developer | BCA Candidate | Coder | MERN | C++</p>
+  </header>
+
+  <div class="container">
+
+    <section class="intro">
+      <h2>About Me</h2>
+      <div class="intro-3d">
+        <p>
+          I’m currently pursuing a Bachelor of Computer Applications at Chhatrapati Shahu Ji Maharaj University, Kanpur (expected June 2024). I specialize in full stack web development using the MERN stack and have strong skills in Data Structures & Algorithms using C++. I regularly participate in tech events like Geek Week, BIAG conferences, and Coding Club challenges. I'm deeply passionate about cybersecurity and tech innovation.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <strong>Bachelor of Computer Applications</strong><br />
+        Chhatrapati Shahu Ji Maharaj University, Kanpur<br />
+        <em>Expected June 2024</em>
+        <ul>
+          <li>Relevant Courses: DSA, DBMS, Web Development</li>
+          <li>Workshops: Tech conferences (BIAG), Geek Week, Coding Club</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Senior Secondary (2020)</strong><br />
+        SSM Senior Secondary School, Gorakhpur
+      </div>
+      <div class="card">
+        <strong>Secondary (2018)</strong><br />
+        Don Bosco Senior Secondary School, Gorakhpur
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">Food Recipes App – ReactJs, Edamam API</div>
+      <div class="card">Task Manager – ReactJs, ExpressJs, MongoDB</div>
+      <div class="card">JioCinema Clone</div>
+      <div class="card">Drawing App</div>
+      <div class="card">Portfolio Website</div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="card">Coming Soon: C++ Mastery, MERN Specialization, Cybersecurity Basics</div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Languages: C++, Java, HTML/CSS, JavaScript</li>
+          <li>Frameworks: ReactJs, ExpressJs, NodeJs, Bootstrap</li>
+          <li>Database: MongoDB, Firebase, SQL</li>
+          <li>Tools: Netlify, Git, Figma</li>
+          <li>Languages: English, Hindi, Marathi (moderate)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> sanjeev8400yadav@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8400760557</p>
+        <p><strong>Location:</strong> Gorakhpur, Uttar Pradesh, India</p>
+        <button class="animated-btn">Let's Connect</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    document.querySelector('.animated-btn').addEventListener('click', () => {
+      alert("Thank you for reaching out! Let's build something great.");
+    });
+  </script>
+</body>
+</html>
